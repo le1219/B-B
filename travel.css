@@ -1,0 +1,100 @@
+body{
+    background-image: url(pic/theme.jpg);
+ }
+ section{
+     width: 100%;
+     position: relative;
+     
+ }
+.area {
+    position: relative; 
+    width: 500px;
+    min-height: 300px;
+    margin: 0px auto;
+   
+}
+
+#area1,
+#area2,
+#area3,
+#area4,
+#area5 {
+    position: absolute;
+    
+}
+
+#area1 {
+    left: -4px;
+    top: 110px;
+    transition: 0.3s;
+}
+
+#area2 {
+    left: 96px;
+    top: 159px;
+}
+
+#area3 {
+    left: 131px;
+    top:60px;
+}
+
+#area4 {
+    left: 255px;
+    top: 125px;
+}
+
+#area5 {
+    left: 289px;
+    top: 11px;
+}
+
+#area1:hover,
+#area2:hover,
+#area3:hover,
+#area4:hover,
+#area5:hover {
+    transform: scale(1.1);
+}
+.travel_nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+    padding:0px
+}
+.travel_nav li{
+    padding: 10px 30px;
+    border:1px solid red;
+    list-style: none;
+    margin-right:20px ;
+}
+.travel_nav li a{
+    color:red;
+}
+
+.card{
+    width: 330px;
+  float: left;
+  margin: 20px 20px;
+}
+.card h4,.card h6{
+    margin-top: 10px;
+
+}
+.st_word{
+    font-size: 30px;
+}
+h4,span{
+    color: saddlebrown;
+}
+h6{
+    color: slategray;
+}
+
+.card img{
+    width: 100%;
+}
+.img_wrap{
+    
+}

@@ -9,66 +9,85 @@
 	<link rel="stylesheet" type="text/css" href="1.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" href="/index.css">
+	<link rel="stylesheet" href="travel.css">
 	<style>
-		.area {
-			position: relative;
-		}
 
-		#a1,
-		#a2,
-		#a3,
-		#a4,
-		#a5 {
-			position: absolute;
-		}
-
-		#a1 {
-			left: 4px;
-			top: 110px;
-			transition: 0.3s;
-		}
-
-		#a2 {
-			left: 110px;
-			top: 148px;
-		}
-
-		#a3 {
-			left: 143px;
-			top: 54px;
-		}
-
-		#a4 {
-			left: 263px;
-			top: 115px;
-		}
-
-		#a5 {
-			left: 297px;
-			top: 5px;
-		}
-
-		#a1:hover,
-		#a2:hover,
-		#a3:hover,
-		#a4:hover,
-		#a5:hover {
-			transform: scale(1.1);
-		}
 	</style>
 </head>
 
 <body>
-	<img src="/pic/kinmen_map/map.png" alt="">
-	<div class="area">
-		<img src="/pic/kinmen_map/map_bg.png" id="0" alt="">
-		<img src="/pic/kinmen_map/l_1.png" id="a1" alt="">
-		<img src="/pic/kinmen_map/l_2.png" id="a2" alt="">
-		<img src="/pic/kinmen_map/l_3.png" id="a3" alt="">
-		<img src="/pic/kinmen_map/l_4.png" id="a4" alt="">
-		<img src="/pic/kinmen_map/l_5.png" id="a5" alt="">
+	<header>
+		<nav>
+			<div class="container">
+				<ul class="list-unstyled sticky-top d-flex justify-content-center border-top my-3 py-3">
+					<li class="px-4"><a href="">客房介紹</a></li>
+					<li class="px-4"><a href="">入住資訊</a></li>
+					<li class="px-4"><a href="">交通指引</a></li>
+					<li class="px-4"><a href="">周邊導覽</a></li>
+					<li class="px-4"><a href="">預約看房</a></li>
+					<li class="px-4"><a href="">聯絡我們</a></li>
+				</ul>
+			</div>
+			<img src="" class="logo_1 ">金禧福民宿
+		</nav>
+	</header>
+	<!-- <img src="/pic/kinmen_map/map.png" alt=""> -->
+	<section>
+		<div class="area">
+			<img src="pic/kinmen_map/map_bg.png" id="0" alt="" hidden>
+			<img src="pic/kinmen_map/l_1.png" id="area1" alt="">
+			<img src="pic/kinmen_map/l_2.png" id="area2" alt="">
+			<img src="pic/kinmen_map/l_3.png" id="area3" alt="">
+			<img src="pic/kinmen_map/l_4.png" id="area4" alt="">
+			<img src="pic/kinmen_map/l_5.png" id="area5" alt="">
+		</div>
+	</section>
+
+	<div class="container">
+		<ul class="travel_nav">
+			<li><a href="">所有旅程</a></li>
+			<li><a href="">在地觀光</a></li>
+			<li><a href="">在地美食</a></li>
+		</ul>
+
+
+		<div class="img_wrap">
+			<div class="card">
+				<img src="pic/travel/1.jpg" alt="">
+				<h4><span class="st_word
+					">翟</span>山坑道</h4>
+				<h6>翟山坑道 893金門縣金城鎮90號</h6>
+				<p>翟山坑道是民國五十年為了因應戰爭的所需而開挖，全程由人工開鑿，共耗時五年才完成，戰爭期間提供登陸小艇搶灘運送補給用，坑內還設置有停靠碼頭。
+				</p>
+				<span>5.4公里 開車9分鐘</span>
+			</div>
+			<div class="card">
+				<img src="pic/travel/2.jpg" alt="">
+				<h4><span class="st_word
+					">清</span>金門鎮總兵署</h4>
+				<h6>893金門縣金城鎮浯江街53號</h6>
+				<p>清金門鎮總兵署所在地原為「叢青軒」，相傳是明萬曆辛丑年(西元1601)進士許獬讀書的地方，康熙年間，總兵陳龍考量舊金門城經歷明末多次兵禍，而后浦人丁興旺，於是將總兵署遷建於此，多次改建後成為現在規模，直到1915年金門設縣，總兵署仍為最高行政中心，歷經金門縣公署、金門縣政府、行政公署、金門防衛部…等等，現在則是金門經典的觀光景點，也是縣定古蹟之一〪
+				</p>
+				<span>2.9公里 開車7分鐘
+				</span>
+			</div>
+			<div class="card">
+				<img src="pic/travel/1.jpg" alt="">
+				<h4><span class="st_word
+					">翟</span>山坑道</h4>
+				<h6>翟山坑道 893金門縣金城鎮90號</h6>
+				<p>翟山坑道是民國五十年為了因應戰爭的所需而開挖，全程由人工開鑿，共耗時五年才完成，戰爭期間提供登陸小艇搶灘運送補給用，坑內還設置有停靠碼頭。
+				</p>
+				<span>5.4公里 開車9分鐘</span>
+			</div>
+
+
+		</div>
+
 	</div>
+
+
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

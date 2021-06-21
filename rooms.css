@@ -1,19 +1,27 @@
 body{
-    background: url("https://lh3.googleusercontent.com/proxy/7orLl7lPfJqzhyV3StMShu9FJz0zK_qC5qQWaCPk1YVfGJnLqV3c10l9HF4zfpZoyAX8f0KaHWyB5ttZf6zafvQ-yU6XDO-RkfKpdaNSFnErfKTNqHfZ");
+   background-image: url(pic/theme.jpg);
+}
+em{
+    color: red;
+    font-size: 60px;
 }
 .rooms{
     width: 100%;
-    min-sheight:300px;
+    min-height:300px;
     border: 2px solid #D5776C;
+    transition: 0.3s;
+    overflow: hidden;
     
 }
 
 .rooms_img{
     height: 300px;
     width: 50%;
-    
+    transition: 0.3s;
 }
-
+.rooms:hover .rooms_img{
+    transform: scale(1.1,1.1);
+}
 footer{
     background: no-repeat  url("https://q-xx.bstatic.com/xdata/images/hotel/840x460/251014079.jpg?k=6e46d8c29eb7447757af1e965321f5d04d903c57c77e3ef9839079fca99e382b&o=") ;
     background-size: 100%;
