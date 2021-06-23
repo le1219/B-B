@@ -8,7 +8,7 @@ body{
  }
 .area {
     position: relative; 
-    width: 500px;
+    width: 450px;
     min-height: 300px;
     margin: 0px auto;
    
@@ -74,27 +74,85 @@ body{
 }
 
 .card{
-    width: 330px;
-  float: left;
-  margin: 20px 20px;
+width: 350px;
+border:1px solid rosybrown;
+border-radius: 5px;
+  margin: 20px 5px;
+ height: 500px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  overflow: hidden;
+  
 }
-.card h4,.card h6{
-    margin-top: 10px;
+.card2{
+      width: 350px;
+      border: 1px solid red;
+      margin: 0px;
+      height: 350px;
+      margin: 20px 5px;
+      border-radius: 5px;
+      overflow: hidden;
+      
+      
+    }
+p{
+    margin-top: 30px;
+    height: 150px;
+    overflow: auto;
+    line-height: 2rem;
+    padding: 0 15px;
+    
+}
+.card_footer{
+    text-align: center;
+    color:slategray;
 
+
+
+   
+}
+h4{
+    margin: 10px 15px;
+    color: saddlebrown;
+    font-size: 28px;
 }
 .st_word{
-    font-size: 30px;
-}
-h4,span{
-    color: saddlebrown;
+    font-size: 26px;
 }
 h6{
+    margin: 5px 15px;
     color: slategray;
+    font-size: 16px;
 }
 
 .card img{
     width: 100%;
-}
-.img_wrap{
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: 0.8s;
     
+
+}
+.card img:hover{
+    transform: scale(1.1);
+    
+}
+.card2 img{
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card2 img:hover{
+    transform: scale(1.1);
+}
+
+.img_wrap{
+    height: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

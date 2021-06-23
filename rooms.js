@@ -11,5 +11,11 @@ $(document).ready(function () {
         $(".rooms").hide();
         $(".family_rooms").show();
     });
+
+    $(".sm_1").click(function () {
+        console.log(1)
+        $("#md_1").attr('src', $(this).attr('src'));
+
+    });
 });
 
