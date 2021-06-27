@@ -68,10 +68,24 @@ body{
     border:1px solid red;
     list-style: none;
     margin-right:20px ;
-}
-.travel_nav li a{
+    border-radius: 10px;
     color:red;
 }
+
+/* ---------------------hover------------------ */
+#t_1:hover{
+    color:white;
+    background-color: red;
+}
+#t_2:hover{
+    color:white;
+    background-color: red;
+}
+ #t_3:hover{
+    color:white;
+    background-color: red;
+}
+
 
 .card{
 width: 350px;
@@ -151,8 +165,49 @@ h6{
 }
 
 .img_wrap{
-    height: 1300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.clear{
+    clear: both;
+}
+/* footer */
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 233, 233);
+    height: 100px;
+}
+.r_footer{
+    display: flex;
+    align-items: center;
+    
+}
+.follow_us h4{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    
+}
+.r_footer_i{
+    display: flex;
+    text-align:center;
+    
+}
+footer img{
+    margin-right:5px ;
+}
+footer p{
+    text-align: center;
+    margin:0;
+}
+
+i{
+    font-size: 25px;
+    margin-right: 10px;
+    color: lightsalmon;
 }

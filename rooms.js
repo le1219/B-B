@@ -22,10 +22,45 @@ $(document).ready(function () {
     //         $('.aa').slideUp();
     //     }
     // });
-
     $(".sm_1").click(function () {
         console.log(1)
         $("#md_1").attr('src', $(this).attr('src'));
+
+    });
+
+    $(".sm_2").click(function () {
+        console.log(1)
+        $("#md_2").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_3").click(function () {
+        console.log(1)
+        $("#md_3").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_4").click(function () {
+        console.log(1)
+        $("#md_4").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_5").click(function () {
+        console.log(1)
+        $("#md_5").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_6").click(function () {
+        console.log(1)
+        $("#md_6").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_7").click(function () {
+        console.log(1)
+        $("#md_7").attr('src', $(this).attr('src'));
+
+    });
+    $(".sm_8").click(function () {
+        console.log(1)
+        $("#md_8").attr('src', $(this).attr('src'));
 
     });
 });
