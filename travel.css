@@ -1,9 +1,106 @@
 body{
     background-image: url(pic/theme.jpg);
+    margin: 0;
  }
- section{
+/* ------------nav-------------- */
+/* nav */
+header{
+    background-color: white;
+    /* opacity: 0.4; */
+    height: 80px;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    z-index: 999;
+}
+nav{
+    height:80px;
+    width: 100%;
+    background-color: rgb(145, 3, 3);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+
+}
+nav img{
+    height: 60px;
+    margin-right: 100px;
+
+}
+nav ul{
+    display:flex;
+    justify-content: center; 
+    margin: 0;
+
+}
+nav ul li{
+    list-style: none;
+    margin-right: 80px;
+}
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+nav a{
+    text-decoration: none;
+    color:white
+
+}
+li:hover{
+    border-bottom:2px solid red ;
+    text-decoration: none;
+}
+.fas.fa-bars.bur{
+    color:white;
+    display: none;
+    font-size: 24px;
+   cursor: pointer;
+}
+.mobile_menu{
+    display: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 80px;
+   
+}
+.mobile_menu div{  
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgrey;
+    background-color: rgb(145, 3, 3);
+    padding-top: 15px;
+   
+
+}
+.mobile_menu a{
+    color:white;
+    
+}
+
+/* -----------section----------------- */
+.container_1{
+    width: 90%;
+    margin: 0 auto;
+}
+section{
+    margin-top: 101px;
+    text-align: center;
+}
+em{
+    color: red;
+    font-size: 60px;
+}
+/* ----section2---- */
+ .section2{
      width: 100%;
      position: relative;
+     margin-top: 30px;
      
  }
 .area {
@@ -11,6 +108,7 @@ body{
     width: 450px;
     min-height: 300px;
     margin: 0px auto;
+    cursor: pointer;
    
 }
 
@@ -60,7 +158,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-   
+    cursor: grab;
     padding:0px
 }
 .travel_nav li{
@@ -71,6 +169,54 @@ body{
     border-radius: 10px;
     color:red;
 }
+.km_intro{
+    position: relative;
+    width: 90%;
+    height: 100px;
+}
+.intro{
+    width: 200px;
+    height: 150px;
+    border-radius: 2%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+.intro h4{
+    margin: 0;
+    text-align: center;
+}
+.intro_kim{
+    position: absolute;
+    top:-320%;
+    left: 20%;
+    display: none;
+    
+}
+.intro_kimsceng{
+    position: absolute;
+    left:32%;
+    top: -60%;
+    display: none;
+}
+.intro_kimning{
+    position: absolute;
+  left: 40%;
+  top:-400%;
+  display: none;
+}
+.intro_kimsha{
+    position: absolute;
+    left: 75%;
+    top:-350%;
+    display: none;
+}
+.intro_kimhu{
+    position: absolute;
+    left: 70%;
+    top: -60%;
+    display: none;
+}
+
 
 /* ---------------------hover------------------ */
 #t_1:hover{
@@ -88,7 +234,7 @@ body{
 
 
 .card{
-width: 350px;
+width: 330px;
 border:1px solid rosybrown;
 border-radius: 5px;
   margin: 20px 5px;
@@ -111,7 +257,7 @@ border-radius: 5px;
       
       
     }
-p{
+.card p ,.card2 p{
     margin-top: 30px;
     height: 150px;
     overflow: auto;
@@ -121,11 +267,7 @@ p{
 }
 .card_footer{
     text-align: center;
-    color:slategray;
-
-
-
-   
+    color:slategray;   
 }
 h4{
     margin: 10px 15px;
@@ -178,36 +320,107 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 233, 233);
-    height: 100px;
+    background-color: rgb(145, 3, 3);
+    height: 80px;
+    color: white;
+}
+.logo{
+    height: 60px;
 }
 .r_footer{
     display: flex;
     align-items: center;
     
 }
-.follow_us h4{
-    text-align: center;
-    margin-top:20px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
-    
-}
 .r_footer_i{
     display: flex;
     text-align:center;
-    
-}
-footer img{
-    margin-right:5px ;
 }
 footer p{
     text-align: center;
     margin:0;
 }
-
-i{
+.r_footer_i a{
     font-size: 25px;
     margin-right: 10px;
-    color: lightsalmon;
+    display: flex;
+    align-items: center;
+}
+/* -------------rwd---------------- */
+@media screen and (max-width:1000px) {
+    .intro_kim{
+        position: absolute;
+        top:-320%;
+        left: 5%;
+        display: none;
+    }
+        .intro_kimsceng{
+            position: absolute;
+            left:20%;
+            top: -60%;
+            display: none;
+        }
+        .intro_kimsha{
+            position: absolute;
+            left: 80%;
+            top:-350%;
+            display: none;
+        }
+}
+@media screen and (max-width:730px) {
+    .intro_kimsha{
+        position: absolute;
+        left: 75%;
+        top:-400%;
+        display: none;
+    }
+    .intro.intro_kimsha{
+        height: 120px;
+        width: 200px;
+        
+    }
+    
+}
+@media screen and (max-width:877px) {
+    
+        nav{
+            margin-right: 50px;
+        }
+        nav ul li{
+            margin-right: 50px;
+        }
+}
+
+@media screen and (max-width:700px){
+    nav {
+    justify-content: space-between;
+    }
+    nav img{
+        margin-right: 20px;
+        margin-left: 50px;
+    }     
+    nav ul li{
+       margin-right: 30px;
+   }
+   nav ul{
+       display: none;
+   }
+   .fas.fa-bars.bur{
+       display: inline-block;
+       padding-right: 70px;
+   }
+   footer{
+       flex-wrap: wrap;
+       height: 200px;
+       text-align: center;
+   }
+   .logo{
+       height: 80px;
+   }
+   footer p{
+       width: 100%;
+   }
+   .r_footer{
+       display: flex;
+   }
 }

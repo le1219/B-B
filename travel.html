@@ -7,8 +7,8 @@
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="1.css">
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -21,28 +21,84 @@
 
 <body>
 	<header>
+
 		<nav>
-			<div class="container">
-				<ul>
-					<li class="px-4"><a href="">客房介紹</a></li>
-					<li class="px-4"><a href="">入住資訊</a></li>
-					<li class="px-4"><a href="">交通指引</a></li>
-					<li class="px-4"><a href="">周邊導覽</a></li>
-					<li class="px-4"><a href="">聯絡我們</a></li>
-				</ul>
-			</div>
-			<img src="" class="logo_1 ">金禧福民宿
+			<a href="index.html"><img src="1x/11.png" alt=""></a>
+			<ul class="">
+				<li class=""><a href="rooms.html"> 客房介紹</a></li>
+				<li class=""><a href="travel.html">周邊導覽</a></li>
+				<li class=""><a href="">入住資訊</a></li>
+			</ul>
+			<i class="fas fa-bars bur"></i>
 		</nav>
+
+
+		<!---->
+		<div class="mobile_menu">
+			<div><a href="rooms.html"> 客房介紹</a></div>
+			<div><a href="travel.html">周邊導覽</a></div>
+			<div><a href="">入住資訊</a></div>
+		</div>
+		<!---->
 	</header>
-	<!-- <img src="/pic/kinmen_map/map.png" alt=""> -->
 	<section>
+		<div class="container_1">
+			<h1><em>T</em>ravel</h1>
+			<h2 class="border-bottom py-2">周邊導覽</h2>
+		</div>
+	</section>
+	<!-- <img src="/pic/kinmen_map/map.png" alt=""> -->
+	<section class=”section2“>
 		<div class="area">
 			<img src="pic/kinmen_map/map_bg.png" id="0" alt="" hidden>
-			<img src="pic/kinmen_map/l_1.png" id="area1" alt="">
-			<img src="pic/kinmen_map/l_2.png" id="area2" alt="">
-			<img src="pic/kinmen_map/l_3.png" id="area3" alt="">
-			<img src="pic/kinmen_map/l_4.png" id="area4" alt="">
-			<img src="pic/kinmen_map/l_5.png" id="area5" alt="">
+			<img src="pic/kinmen_map/l_1.png" id="area1" alt="烈嶼鄉" class="area_img" data-area="1">
+			<img src="pic/kinmen_map/l_2.png" id="area2" alt="金城鎮" class="area_img" data-area="2">
+			<img src="pic/kinmen_map/l_3.png" id="area3" alt="金寧鎮" class="area_img" data-area="3">
+			<img src="pic/kinmen_map/l_4.png" id="area4" alt="金湖鎮" class="area_img" data-area="4">
+			<img src="pic/kinmen_map/l_5.png" id="area5" alt="金沙鎮" class="area_img" data-area="5">
+		</div>
+		<div class="km_intro">
+			<div class="intro intro_kim" data-intro="1">
+				<h4>烈嶼鄉景點</h4>
+				<ul>
+					<li>小金門灘</li>
+					<li>將軍堡</li>
+					<li>貓公石濱海休息區</li>
+					<li>湖井戰史館</li>
+				</ul>
+			</div>
+			<div class="intro intro_kimsceng" data-intro="2">
+				<h4>金城鎮景點</h4>
+				<ul>
+					<li>模範街</li>
+					<li>得月樓</li>
+					<li>莒光樓</li>
+					<li>翟山坑道</li>
+				</ul>
+			</div>
+			<div class="intro intro_kimning" data-intro="3">
+				<h4>金寧鄉景點</h4>
+				<ul>
+					<li>播音牆</li>
+					<li>金門大學</li>
+					<li>金禧福</li>
+					<li>後湖海濱公園</li>
+				</ul>
+			</div>
+			<div class="intro intro_kimhu" data-intro="4">
+				<h4>金湖鎮景點</h4>
+				<li>新湖漁港</li>
+				<li>太武山</li>
+				<li>八二三戰史館</li>
+			</div>
+			<div class="intro intro_kimsha" data-intro="5">
+				<h4>金沙鎮景點</h4>
+				<ul>
+					<li>沙美老街</li>
+					<li>碧山彩繪村</li>
+					<li>東珩風獅爺</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
@@ -120,6 +176,96 @@
 							">得</span>月樓建於公元1931年，是水頭聚落黃輝煌經商致富後，委請福建內地的匠師陳南安設計建造的一座高聳建物，也是當時水頭聚落最高的建築，便以「近水樓台先得月」之意涵，取名為「得月樓」。</p>
 				</div>
 				<div class="card_footer">5.7公里 開車9分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/7.jpeg" alt="">
+					<h4>模範街</h4>
+					<h6>金門縣金城鎮東門模範街</h6>
+					<p><span
+							class="st_word
+							">模</span>範街原名為自強街，民國14年由金門商會會長傅錫琪隊為集資興建而成，由32間連廊式洋樓店屋所組成，建築採中國式風格，裝飾雕花精美的窗飾及鳥踏，整體街道卻具日本大正時期的建築風格，成功融合中日式風格於一體，同時亦融合西式磚造，風格獨特，整齊美觀。民國50年代為其最為繁盛的巔峰時期，是金門現存最具特色的老街。
+					</p>
+				</div>
+				<div class="card_footer">3.1公里 開車8分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/8.jpeg" alt="">
+					<h4>北山播音牆（心戰牆）</h4>
+					<h6>金門縣金寧鄉北山村</h6>
+					<p><span class="st_word
+							">播</span>音牆位於北山斷崖上的北山播音牆，是戰時用來對中國沿海居民喊話的地方，與馬山觀測所的馬山播音站一樣，透過巨大的播音器，用國語和台語廣播一些訊息來招降。
+					</p>
+				</div>
+				<div class="card_footer">10.1公里 開車18分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/9.jpeg" alt="">
+					<h4>后湖濱海公園</h4>
+					<h6>金門縣金寧鄉東湖路</h6>
+					<p><span class="st_word
+							">后</span>湖濱海公園以生態豐富為著名，擁有沙燧、榮螺、佛手、文蛤、紫菜等豐富的海洋資源，遊客們可在此挖掘螺類、戲水、撿貝殼、散步，貼近海天一色的大自然。
+
+					</p>
+				</div>
+				<div class="card_footer">10.1公里 開車18分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/10.jpeg" alt="">
+					<h4>碧山彩繪村</h4>
+					<h6> 金門縣金沙鎮碧山村</h6>
+					<p><span
+							class="st_word
+							">后</span>交融著不同文化的豐富地景，讓碧山聚落一再迎來遊客的參訪。2002年，在《碧山的呼喚》主題歷史建築活動中，出現了「碧山八景」一詞，包括著名的陳清吉洋樓、陳德幸洋樓、睿友學校、百年黃連木、一落四櫸民宅、昭靈宮及大小宗祠，成為碧山聚落必訪招牌！而由繪本畫家劉瑞琪(wawa)與村內志工，帶領安瀾國小學童完成的牆上彩繪，讓古樸的聚落多了幾分活力，更讓碧山聚落增添新生代的創意，延續嶄新篇章。
+
+					</p>
+				</div>
+				<div class="card_footer">15.2公里 開車22分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/11.jpeg" alt="">
+					<h4>新湖漁港</h4>
+					<h6>新湖漁港安檢所 </h6>
+					<p><span
+							class="st_word
+							">后</span>位在金門縣金湖鎮新湖里，為第二類漁港，屬於料羅灣在金湖鎮西南側的沿岸，是離金湖市中心最近的濱海地區，以金門三大漁港歷史排名則為最近代才開發而成，但卻是三大漁港中最具規模的，是金門區漁會、金門地區最大漁業設施與作業的所在地漁港內除了傳統漁業外，亦規劃有碉堡休息節點、黃金沙灘地區、慈鑾宮等，為兼具信仰與遊憩的濱海公園。
+
+
+					</p>
+				</div>
+				<div class="card_footer">15公里 開車15分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/12.jpeg" alt="">
+					<h4>沙美老街</h4>
+					<h6>金門縣金沙鎮復興街</h6>
+					<p><span
+							class="st_word
+							">沙</span>美老街位於金門縣東北方，是金門最早形成的市街之一，創建年代可以追溯至宋代，明朝時因為金門的鹽產業到達巔峰，而金沙又是鹽產重鎮，造就出沙美老街的極盛時期，為整個金沙鎮的軸心。而現在因人口外移，城鎮逐漸衰落，近年因為電影《軍中樂園》以沙美老街做為主要拍攝場景，重新吸引觀光人潮來此欣賞歲月推移的歷史軌跡，而博愛街上有一間著名的閩式燒餅，也不妨來此品嘗傳承三十多年的美味。
+
+
+					</p>
+				</div>
+				<div class="card_footer">13公里 開車21分鐘</div>
+			</div>
+			<div class="card all travel_family">
+				<div class="card_main">
+					<img src="pic/travel/12.jpeg" alt="">
+					<h4>烈嶼鄉</h4>
+					<h6>烈嶼鄉</h6>
+					<p><span
+							class="st_word
+							">烈</span>嶼鄉將環島保存仍十分完整的車轍道整合規劃而成，全長18.5公里，風光以小金門環島海景與戰役工事為特色。從九宮碼頭出發，逆時鐘方向繞經將軍堡、鐵漢堡、勇士堡、貓公石濱海休憩區、湖井頭戰史館、陵水湖賞鳥區、東林海濱等景點，沿途綠蔭夾道，猶如一條綠色隧道，騎乘起來十分舒適愜意。
+
+
+					</p>
+				</div>
+				<div class="card_footer">13公里 開車21分鐘</div>
 			</div>
 			<!-- 美食 -->
 
@@ -214,30 +360,22 @@
 		<div class="clear"></div>
 	</div>
 
-
 	<footer>
-		<img src="" alt="">
+		<img class="logo" src="1x/11.png" alt="">
 		<p><i class="fas fa-copyright"></i>Copyright © 2016 JinXiFu. All rights reserved</p>
-		<div calss="r_footer ">
-			<div class="follow_us ">
-				<h4>關注我們</h4>
-			</div>
+		<div calss="r_footer">
 			<div class="r_footer_i">
 				<a href="https://www.facebook.com/jinxifu326"><i class="fab fa-facebook"></i></a>
 				<a href="mailto:gcf00123@gmail.com"><i class="fas fa-envelope-square"></i></a>
+				<a href="http://www.booking.com/Share-KPgJJa"><img src="pic/Booking.com.png" alt=""
+						style="height: 30px;"></a>
 				<a
 					href="https://www.agoda.com/zh-hk/jin-xi-fu-b-b/hotel/kinmen-tw.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2021-06-24&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=TWD&isFreeOccSearch=false&los=2&searchrequestid=85e75c95-d0c4-4be1-82b4-7648c82da2e8"><img
-						src="pic/Agoda_logo.svg.png" alt="" style="width: 50px;"></a>
-				<a href="http://www.booking.com/Share-KPgJJa"><img src="pic/Booking.com.png" alt=""
-						style="width: 50px;"></a>
+						src="pic/Agoda_logo.svg.png" alt="" style="height: 30px;"></a>
 			</div>
 		</div>
 
 	</footer>
-
-
-
-
 </body>
 
 </html>

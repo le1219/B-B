@@ -4,7 +4,7 @@ body{
 }
 /* marquee */
 .speaker{
-    margin-top: 100px;
+    margin-top: 80px;
     height: 45px;
     display: flex;
    justify-content: center;
@@ -39,7 +39,7 @@ transform: translateY(-100%);
 header{
     background-color: white;
     /* opacity: 0.4; */
-    height: 100px;
+    height: 80px;
     position: fixed;
     top:0px;
     width: 100%;
@@ -48,7 +48,7 @@ header{
 }
 nav{
 /* try */
-    height:100px;
+    height:80px;
     width: 100%;
     background-color: rgb(145, 3, 3);
     display: flex;
@@ -59,7 +59,7 @@ nav{
 
 }
 nav img{
-    height: 80px;
+    height: 60px;
     margin-right: 100px;
 
 }
@@ -72,6 +72,10 @@ nav ul{
 nav ul li{
     list-style: none;
     margin-right: 80px;
+}
+a{
+    color: white !important;
+    text-decoration: none !important;
 }
 nav a{
     text-decoration: none;
@@ -86,6 +90,7 @@ li:hover{
     color:white;
     display: none;
     font-size: 24px;
+    cursor: pointer;
 }
 .mobile_menu{
     display: none;
@@ -94,7 +99,7 @@ li:hover{
     text-align: center;
     align-items: center;
     position: fixed;
-    margin-top: 100px;
+    margin-top: 80px;
    
 }
 .mobile_menu div{  
@@ -110,19 +115,24 @@ li:hover{
     color:white;
     
 }
-
+/* ------------------jumbo---------- */
 .jumbo{
-    
+    width: 98%;
     height: 400px;
+    margin: 0px auto;
     background-color: rgb(255, 233, 233);
     display: flex;
     justify-content:space-between;
+    
 }
 .carousel{
     width: 60%;
     height: 300px;
     margin: 0 auto;
     
+}
+.carousel-indicators{
+    bottom: -90px !important;
 }
 .carousel img{
     width: auto;
@@ -231,7 +241,11 @@ section{
 }
 
 
-
+.bg{
+    background-color: rgb(255, 233, 233);
+    min-height: 500px;
+    margin-top: 100px;
+}
 
 
 .location{
@@ -271,23 +285,20 @@ iframe{
     font-size: 20px;
 }
 footer{
-    margin-top: 50px;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 233, 233);
-    height: 100px;
+    background-color: rgb(145, 3, 3);
+    height: 80px;
+    color: white;
+}
+.logo{
+    height: 60px;
 }
 .r_footer{
     display: flex;
     align-items: center;
-    
-}
-.follow_us h4{
-    text-align: center;
-    margin-top:20px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
     
 }
 .r_footer_i{
@@ -301,7 +312,6 @@ footer p{
 .r_footer_i a{
     font-size: 25px;
     margin-right: 10px;
-    color: lightsalmon;
 }
 /* -----------rwd--------- */
 @media screen and (max-width:1070px) {
@@ -350,9 +360,7 @@ footer p{
     .location{
         flex-wrap: wrap;
     }
-    .detail{
-        margin-top: 50px;
-    }
+    
     .jumbo{
         flex-wrap: wrap;
         
@@ -366,6 +374,7 @@ footer p{
         text-align: center;
     }
     .carousel{
+        padding-top: 10px;
         width: 80%;
         height: 300px;
         margin: 0 auto;
@@ -377,6 +386,9 @@ footer p{
         margin-top: 100px;
     }
 }
+/* }@media screen and (max-width:725px){
+   .bg{}
+} */
 @media screen and (max-width:700px){
      nav {
      justify-content: space-between;
@@ -395,7 +407,20 @@ footer p{
         display: inline-block;
         padding-right: 70px;
     }
-    
+    footer{
+        flex-wrap: wrap;
+        height: 200px;
+        text-align: center;
+    }
+    .logo{
+        height: 80px;
+    }
+    footer p{
+        width: 100%;
+    }
+    .r_footer{
+        display: flex;
+    }
 }
 @media screen and (max-width:670px) {
     .lead{

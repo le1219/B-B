@@ -13,5 +13,24 @@ $(function () {
         $('.all').hide();
         $('.travel_family').show();
     })
+    $('.fas.fa-bars.bur').click(function () {
+
+        if ($('.mobile_menu').css('display') == 'none') {
+            console.log(1)
+            $('.mobile_menu').show();
+        }
+        else {
+            console.log(2)
+            $('.mobile_menu').hide();
+
+        }
+    });
+
+    $('.area_img').hover(function () {
+        $('.intro').hide();
+        var nowArea = $(this).data('area');
+        $('.intro[data-intro=' + nowArea + ']').show();
+    });
 
 });
+
