@@ -1,0 +1,601 @@
+body{
+    background:url(pic/theme1.jpg);
+    margin:0px;
+}
+/* marquee */
+.speaker{
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+   justify-content: center;
+   background-color: rgb(243, 243, 243);
+}
+.l_speaker{
+    padding-top: 10px;
+}
+.speaker i{
+    color: red;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.part {
+    height: 30px;
+      overflow: hidden;
+}
+
+.scrolling {
+  animation: marquee 3s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes marquee {
+from {
+transform: translateY(100%);
+}
+to { 
+transform: translateY(-100%);
+}
+}
+/* nav */
+header{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    z-index: 999;
+}
+nav{
+/* try */
+    height:30px;
+    width: 100%;
+    background-color: rgb(145, 3, 3);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+
+}
+nav img{
+    height: 60px;
+    margin-right: 100px;
+
+}
+nav ul{
+    display:flex;
+    justify-content: center; 
+    margin: 0;
+
+}
+nav ul li{
+    list-style: none;
+    margin-right: 80px;
+}
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+nav a{
+    text-decoration: none;
+    color:white
+
+}
+li:hover{
+    border-bottom:2px solid red ;
+    text-decoration: none;
+}
+.fas.fa-bars.bur{
+    color:white;
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mobile_menu{
+    display: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 80px;
+   
+}
+.mobile_menu div{  
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgrey;
+    background-color: rgb(145, 3, 3);
+    padding-top: 15px;
+   
+
+}
+.mobile_menu a{
+    color:white;
+    
+}
+/* ------------------section---------- */
+.hercosection{
+    background: url(pic/herosection/h1.jpg);
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 0px;
+}
+.hercosection > .logo{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.hercosection> .logo img{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    background-color:rgba(0, 0, 0, 0.304)
+}
+.intro {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.intro>.text {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(145, 3, 3);
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 25px;
+} 
+.hercosection:hover .logo {
+    opacity: 0.3;
+  }
+  
+  .hercosection:hover .intro {
+    opacity: 1;
+  }
+.service{
+    height: 90px;
+    width: 100%;
+    background-color:rgb(145, 3, 3) ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.icon{
+    width: 100px;
+    height: 60px;
+    margin-right: 50px;
+    
+}
+.icon>i{
+    font-size: 30px;
+    color: white;
+}
+.icon h6{
+    color:white;
+}
+/* -----------kimmen------------ */
+.kinmen img{
+    height: 400px;
+    width: auto;
+
+}
+.kinmen{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.intro_kinmen{
+   width: 600px;
+   padding:50px;
+   background-color:rgba(255, 255, 255, 0.811);
+   text-align: center;
+}
+.intro_kinmen h2{
+    color: rgb(145, 3, 3);
+}
+.intro_kinmen p{
+    font-size: 20px;
+    text-align: left;
+}
+.btn_red{
+    color: rgb(145, 3, 3);
+    border: 1px solid rgb(145, 3, 3);
+    display: inline-block;
+    padding: 10px 20px;
+}
+.btn_red:hover{
+    background-color: rgb(145, 3, 3);
+    color:white;
+    border-radius: 5px;
+} 
+   
+  
+/* --------------section--------------- */
+section{
+    min-height: 300px;
+    margin-top: 60px;
+}
+.my_row{
+    display: flex;
+    justify-content: center;
+}
+.topic{
+    padding-top: 50px;
+    text-align: center;
+}
+.topic em{
+    color:red;
+    font-size: 60px;
+}
+
+
+#rooms{
+    min-height: 500px;
+    background-color: rgba(223, 221, 221, 0.726);
+    padding: 20px;
+}
+  
+.my_card{
+    width: 300px;
+    margin: 30px;
+    border: 1px solid lightgrey;
+    padding:5px;
+    border-radius: 3%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 10px 7px 5px rgb(220, 220, 220);
+   
+
+}
+.card_img{
+    background-color: lightgrey;
+    overflow: hidden;
+}
+.my_card img{
+    width: 100%;
+    height:200px;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    padding: 5px;
+    
+    transition: 0.3;
+}
+.my_card img:hover{
+   transform: scale(1.1);
+   opacity: 0.6;
+   
+    
+}
+.text h5{ 
+    border-bottom: 1px solid red;
+    display: inline;
+}
+.text{
+    width: 250px;
+    height: 200px;
+    padding:20px;
+    position: relative;
+    background-color: white;
+    border-radius: 2%;
+    margin: -15px auto;
+    text-align: center;  
+}
+.text p{
+    text-align: left;
+    margin-top: 20px;
+}
+.slick-arrow:before{
+    color:#911e1b !important;
+}
+.my-slide{
+    display:flex !important;
+    align-items: center !important;
+}
+.booking_info{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.booking_info img{
+    margin-right: 50px;
+}
+.booking_info h2{
+    color: rgb(145, 3, 3);
+    margin-right: 30px;
+    border-right: 1px solid black;
+    padding-right: 20px;
+
+}
+/* ------------travel---------------- */
+.card{
+    width: 330px;
+    border:1px solid rosybrown;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    height: 550px;
+    float: left;
+    padding-bottom: 10px;
+    overflow: hidden;
+    
+      
+}
+.card p {
+    margin-top: 30px;
+    height: 150px;
+    overflow: auto;
+    line-height: 2rem;
+    padding: 0 15px;
+    
+}
+.card_footer{
+    text-align: center;
+    color:slategray;   
+}
+.card_main > h4{
+    margin: 10px 15px;
+    color: saddlebrown;
+    font-size: 28px;
+}
+.st_word{
+    font-size: 26px;
+}
+.card_main > h6{
+    margin: 5px 15px;
+    color: slategray;
+    font-size: 16px;
+}
+
+.card img{
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: 0.8s;
+    
+
+}
+.card img:hover{
+    transform: scale(1.1);
+    
+}    
+.clear{
+    clear: both;
+}
+
+#location{
+    min-height: 600px;
+    background-color: rgba(223, 221, 221, 0.726);
+    padding: 20px;
+}
+
+.part_location{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.location em{
+    color:red;
+    font-size: 60px;
+}
+iframe{
+    margin-right: 50px;
+    width:500px; 
+    height:300px;
+}
+.detail{
+    padding:20px;
+    margin-left: 60px;
+    text-align: left;
+}
+.detail h3{
+    text-align: center;
+    color: rgb(145, 3, 3);
+
+}
+.detail p{
+    display: flex;
+}
+.lock{
+    width: 32px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: lightpink;
+    margin-right: 10px;
+
+} 
+.lock i{
+    font-size: 20px;
+}
+
+.up{
+    border-radius: 20px;
+    width: 30px;
+    height: 80px;
+    background-color: rgb(145, 3, 3);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 85px;
+    right: 0px;
+
+}
+/* ---------------footer------------ */
+.footer{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(145, 3, 3);
+    height: 80px;
+    color: white;
+}
+.footer img{
+    height: 60px;
+}
+.r_footer{
+    display: flex;
+    align-items: center;
+    
+}
+.r_footer_i{
+    display: flex;
+    text-align:center;
+}
+.footer p{
+    text-align: center;
+    margin:0;
+}
+.r_footer_i a{
+    font-size: 25px;
+    margin-right: 10px;
+}
+/* -----------rwd--------- */
+@media screen and (max-width:1200px){
+.card{
+    width: 280px;
+    margin: 10px;
+}
+.card_footer{
+    padding: 10px;
+}
+}
+@media screen and (max-width:1000px){
+    .kinmen {
+        margin: 50px auto;
+    }
+    .kinmen > img{
+        padding-left: 30px;
+        width: 500px;
+    }
+    .intro_kinmen > p{
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width:992px){
+   .card{
+       width:320px ;
+    }
+    .detail{
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width:900px){
+    .kinmen {
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        border:1px solid black;
+    }
+    .part_location{
+        justify-content: space-around;
+    }
+    .kinmen > img{
+        flex-wrap: wrap;
+        padding-left: 30px;
+        width: 80%;
+    }
+    .intro_kinmen {
+       font-size: 22px;
+        
+    }
+    .booking_info{
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+}
+@media screen and (max-width:768px){
+    .card{
+        width:400px ;
+        margin-left: 50px;
+     }
+     .part_location{
+         flex-wrap: wrap;
+     }
+     iframe{
+         width: 100%;
+     }
+     .detail{
+         width: 100%;
+         text-align: left;
+     }
+     .up{
+        
+        bottom: 210px;
+       
+    
+    }
+     .footer{
+        flex-wrap: wrap;
+        height: 200px;
+        text-align: center;
+    }
+   .footer>.logo{
+        height: 80px;
+    }
+   .c_footer{
+        width: 100%;
+    }
+    .r_footer{
+        display: flex;
+    }
+ }
+ @media screen and (max-width:650px){
+    nav ul li{
+        margin-right: 30px
+     };
+     .hercosection> .logo img{
+         left: 40%;}
+     .intro>.text {
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgb(145, 3, 3);
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 25px;
+        } 
+        .booking_info{
+       flex-wrap: wrap;
+       text-align: center;
+    }
+        .kinmen > img{
+            flex-wrap: wrap;
+            padding-left: 30px;
+            width: 500px;
+        }
+        .booking_info img{
+            margin-right: 20px;
+        }
+        .booking_info h2{
+           border-bottom: 1px solid black;
+           border-right: 0;
+           width: 100%;
+           padding-bottom: 20px;
+        }
+        .booking_c{
+            margin-left: 15%;
+        }
+ }

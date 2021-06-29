@@ -1,5 +1,5 @@
 body{
-    background:url(pic/theme.jpg);
+    background:url(pic/theme1.jpg);
     margin:0px;
 }
 
@@ -95,6 +95,7 @@ li:hover{
 /* --------------------------------section----------------------- */
 section{
     padding: 50px;
+   
 }
 .c_center{
     text-align: center;
@@ -114,6 +115,7 @@ section i{
     font-size: 60px;
     margin-right:50px ;
     text-align: right;
+    color:pink;
 }
 .i{
     width: 60px;
@@ -126,11 +128,14 @@ section .row{
     margin: 30px auto;
 }
 section ul{
-    width: 80%;
+    width: 60%;
     list-style-position: inside;
     padding-left: 0px;
 }
+.row{
+    flex-wrap: inherit;
 
+}
 /* ----------------------footer--------------- */
 footer{
     
@@ -162,4 +167,63 @@ footer p{
     margin-right: 10px;
 }
 /* -----------rwd--------- */
-
+@media screen and (max-width:900px) {
+   section .row{
+        margin-top: 60px;
+        display: block;
+        text-align: center;
+        
+    }
+        .f_flex{
+            align-items: center;
+            text-align: center;
+            margin: 10px auto;
+           
+        }
+    .i{
+        width: 100%;
+    }
+    section p{
+        margin-top: 10px;
+    }
+    section i{
+        margin-right: 0;
+    }
+    section ul{
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px){
+    nav {
+    justify-content: space-between;
+    }
+    nav img{
+        margin-right: 20px;
+        margin-left: 50px;
+    }     
+    nav ul li{
+       margin-right: 30px;
+   }
+   nav ul{
+       display: none;
+   }
+   .fas.fa-bars.bur{
+       display: inline-block;
+       padding-right: 70px;
+   }
+   footer{
+       flex-wrap: wrap;
+       height: 200px;
+       text-align: center;
+   }
+   .logo{
+       height: 80px;
+   }
+   footer p{
+       width: 100%;
+   }
+   .r_footer{
+       display: flex;
+   }
+}

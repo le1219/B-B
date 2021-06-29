@@ -1,5 +1,5 @@
 body{
-    background-image: url(pic/theme.jpg);
+    background-image: url(pic/theme1.jpg);
     margin: 0;
  }
 /* ------------nav-------------- */
@@ -154,6 +154,175 @@ em{
 #area5:hover {
     transform: scale(1.1);
 }
+.boat{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+    top: 50%;
+    animation: boat 7s infinite;
+}
+@keyframes boat {
+    0% {
+      left: -30%;
+      top: 50%;
+    }
+    50% {
+      left: -45%;
+      top: 50%;
+    }
+    100% {
+      left: -40%;
+      top: 50%;
+    }
+  }
+.cloud{
+    position: absolute;
+    left: -50%;
+    top: -40%;
+    width: 800px;
+    animation: cloud 30s infinite;
+}
+@keyframes cloud {
+    0% {
+        left: -50%;
+        top: -35%;
+    }
+    50% {
+        left: -30%;
+        top: -35%;
+    }
+    100% {
+        left: -50%;
+        top: -35%;
+    }
+  }
+  .boats{
+    position: absolute;
+    left: 110%;
+    top: 38%;
+    width: 100px;
+    animation: boats 10s infinite;
+}
+@keyframes boats {
+    0%{
+        left: 130%;
+        top: 60%;
+    }
+        40%{
+        left: 120%;
+        top: 57%;
+        }
+        70%{
+        
+            left: 100%;
+            top: 58%;
+        }
+    100%{
+        
+        left: 100%;
+        top: 57%;
+} 
+}
+
+.s2{
+    position: absolute;
+    right: -40%;
+    top: 59%;
+    width: 300px;
+    animation: s2 4s infinite;
+}
+@keyframes s2 {
+    0%{
+        right: -50%;
+        top: 71%;
+    }
+        50%{
+            right: -49%;
+            top: 71%;
+        }
+    
+    100%{
+        
+            right: -50%;
+            top: 71%;
+    }
+} 
+.s3{
+    position: absolute;
+    right: -40%;
+    top: 47%;
+    width: 300px;
+    animation: s3 3s infinite;
+}
+@keyframes s3 {
+    0%{
+        right: -50%;
+    top: 67%;
+    }
+    50%{
+        right: -51%;
+    top: 67%;
+    }
+    100%{
+        right: -50%;
+    top: 67%;
+    }
+}
+.s4{
+    position: absolute;
+    right: -40%;
+    top: 45%;
+    width: 300px;
+    animation: s4 3s infinite;
+}
+@keyframes s4 {
+    0%{
+        right: -50%;
+    top: 65%;
+    }
+    50%{
+        right: -51%;
+    top: 65%;
+    }
+    100%{
+        right: -50%;
+    top: 65%;
+    }
+}
+.s5{
+    position: absolute;
+    right: -40%;
+    top: 44%;
+    width: 300px;
+    animation: s5 4s infinite;
+}
+@keyframes s5 {
+    0%{
+        right: -50%;
+    top: 64%;
+    }
+    50%{
+        right: -51%;
+    top: 64%;
+    }
+    100%{right: -50%;
+        top: 64%;}
+}
+@keyframes fish {
+    0% {
+        left: 70%;
+        top: 35%;
+    }
+    50% {
+        left: 70%;
+        top: 35%;
+    }
+    100% {
+        left: 70%;
+        top: 35%;
+    }
+  }
 .travel_nav{
     position: relative;
     display: flex;
@@ -180,6 +349,7 @@ em{
     border-radius: 2%;
     border: 1px solid lightgrey;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
 }
 .intro h4{
     margin: 0;
@@ -199,7 +369,7 @@ em{
     display: none;
 }
 .intro_kimning{
-    position: absolute;
+position: absolute;
   left: 40%;
   top:-400%;
   display: none;
@@ -216,7 +386,11 @@ em{
     top: -60%;
     display: none;
 }
-
+/*------------ addclass----------- */
+.add{
+    background-color: red;
+    color: white !important;
+}
 
 /* ---------------------hover------------------ */
 #t_1:hover{
@@ -236,6 +410,7 @@ em{
 .card{
 width: 330px;
 border:1px solid rosybrown;
+background-color: white;
 border-radius: 5px;
   margin: 20px 5px;
  height: 500px;
@@ -244,6 +419,7 @@ border-radius: 5px;
   justify-content: space-between;
   padding-bottom: 10px;
   overflow: hidden;
+  
   
 }
 .card2{
@@ -254,6 +430,7 @@ border-radius: 5px;
       margin: 20px 5px;
       border-radius: 5px;
       overflow: hidden;
+      background-color: white;
       
       
     }
@@ -366,6 +543,24 @@ footer p{
             top:-350%;
             display: none;
         }
+        .boat{
+
+        }
+ @keyframes boat {
+        0% {
+          left: 20%;
+          top: 70%;
+        }
+       
+        50% {
+          left: 40%;
+          top: 70%;
+        }
+        100%{
+            left: 20%;
+          top: 70%;
+        }
+      }
 }
 @media screen and (max-width:730px) {
     .intro_kimsha{
@@ -389,6 +584,22 @@ footer p{
         nav ul li{
             margin-right: 50px;
         }
+        @keyframes boat {
+            0% {
+              left: -30%;
+              top: 70%;
+            }
+           
+            50% {
+              left: -20%;
+              top: 70%;
+            }
+            100%{
+                left: -30%;
+              top: 70%;
+            }
+          }
+        
 }
 
 @media screen and (max-width:700px){
@@ -423,4 +634,19 @@ footer p{
    .r_footer{
        display: flex;
    }
+   @keyframes boat {
+    0% {
+      left: -20%;
+      top: 70%;
+    }
+   
+    50% {
+      left: -15%;
+      top: 70%;
+    }
+    100%{
+        left: -20%;
+      top: 70%;
+    }
+  }
 }

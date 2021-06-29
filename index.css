@@ -1,5 +1,5 @@
 body{
-    background:url(pic/theme.jpg);
+    background:url(pic/theme1.jpg);
     margin:0px;
 }
 /* marquee */
@@ -118,32 +118,35 @@ li:hover{
 /* ------------------jumbo---------- */
 .jumbo{
     width: 98%;
-    height: 400px;
+    min-height: 420px;
     margin: 0px auto;
     background-color: rgb(255, 233, 233);
     display: flex;
     justify-content:space-between;
+    padding: 10px;
     
 }
 .carousel{
-    width: 60%;
+    width: 70%;
     height: 300px;
-    margin: 0 auto;
+    margin: 10px 50px;
     
 }
 .carousel-indicators{
     bottom: -90px !important;
 }
 .carousel img{
-    width: auto;
+    width: 700px;
     height: 400px;
 }
 
 
 
 .intro_box {
-    width: 60%;
     background-color: rgb(255, 233, 233);
+    /* border: 5px dotted white; */
+    margin: 20px;
+    
     
 }
 .intro_title{
@@ -154,12 +157,64 @@ li:hover{
 
 
 .lead {
-    padding: 10px 60px;
+    margin-top: 20px;
     line-height: 1.8rem;
     font-weight: 500;
-    color: rgb(218, 88, 88)
+    color: rgb(218, 88, 88);
+   
     
 }
+/* ---------- */
+.hercosection{
+    background: url(pic/herosection/h1.jpg);
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 0px;
+}
+.hercosection >.logo{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.hercosection > .logo img{
+    position: absolute;
+    left: 41%;
+    top: 25%;
+    background-color:rgba(0, 0, 0, 0.304)
+}
+.intro {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.intro>.text {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(145, 3, 3);
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 25px;
+} 
+.hercosection:hover .logo {
+    opacity: 0.3;
+  }
+  
+  .hercosection:hover .intro {
+    opacity: 1;
+  }
 section{
     min-height: 300px;
 }
@@ -179,6 +234,10 @@ section{
     margin-top: 100px;
     text-align: center;
 }
+.topic2 h1{
+    padding-top: 50px;
+    text-align: center;
+}
 .topic2 em{
     color:red;
     font-size: 60px;
@@ -191,6 +250,8 @@ section{
     padding:5px;
     border-radius: 3%;
     overflow: hidden;
+    background-color: white;
+    box-shadow: 10px 7px 5px rgb(220, 220, 220);
    
 
 }
@@ -252,6 +313,7 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    min-height: 400px;
     
 }
 
@@ -285,7 +347,7 @@ iframe{
     font-size: 20px;
 }
 footer{
-    
+    /* margin-top: 50px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -314,11 +376,24 @@ footer p{
     margin-right: 10px;
 }
 /* -----------rwd--------- */
-@media screen and (max-width:1070px) {
-    .lead{
-    font-size: 16px;
-    padding:10px 40px;
+@media screen and (max-width:1200px) {
+    .carousel{
+        width: 60%;
+        margin: 10px 20px;
+    }
+    .intro_box{
+        margin:0px
+    }
+    .carousel img{
+        width: 600px;
+        height: 400px;
+    }
 }
+@media screen and (max-width:1000px){
+    .carousel img{
+        width: 650;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width:877px) {
@@ -338,16 +413,45 @@ footer p{
         nav ul li{
             margin-right: 50px;
         }
-}
-@media screen and (max-width:810px) {
+        .jumbo{
+            flex-wrap: wrap; 
+        }
     .lead{
-    margin: 0px;
-    padding: 20px;
-    line-height: 1.5rem;
+        padding: 10px 70px;
+        line-height: 1.6rem;
+        text-align: center;
+        
     }
-    .detail{
+    .carousel{
+        padding-top: 10px;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .carousel img{
+        width: 700px;
+        height: 400px;
+    }
+    .intro_box{
+        width: 100%;
+       margin-top: 100px;
+    }
+    .intro_title{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:810px) {
+   .detail{
         padding:10px;
         margin-left: 0px;
+    }
+    .carousel img{
+        width: 650px;
+        height: 300px;
+    }
+    .intro_title{
+        padding-top: 0px;
     }
     
 
@@ -360,35 +464,14 @@ footer p{
     .location{
         flex-wrap: wrap;
     }
-    
-    .jumbo{
-        flex-wrap: wrap;
-        
-    }
-    .intro_box{
-        width: 100%;
-    }
-    .lead{
-        padding: 10px 70px;
-        line-height: 1.2rem;
-        text-align: center;
-    }
-    .carousel{
-        padding-top: 10px;
-        width: 80%;
-        height: 300px;
-        margin: 0 auto;
-    }
     .topic{
-        margin-top: 200px;
+        margin-top: 70px;
     }
     .topic2{
         margin-top: 100px;
     }
 }
-/* }@media screen and (max-width:725px){
-   .bg{}
-} */
+
 @media screen and (max-width:700px){
      nav {
      justify-content: space-between;
@@ -412,7 +495,7 @@ footer p{
         height: 200px;
         text-align: center;
     }
-    .logo{
+    footer>.logo{
         height: 80px;
     }
     footer p{
@@ -421,21 +504,35 @@ footer p{
     .r_footer{
         display: flex;
     }
+    .carousel img{
+        width: 650px;
+        height: 300px;
+    }
+    .carousel-indicators{
+        bottom: -30px !important;
+    }
 }
 @media screen and (max-width:670px) {
     .lead{
-        line-height: 1.2rem;
+        line-height: 2rem;
         font-size: 18px;
-        padding: 10px 70px ;
+        padding: 0px 70px ;
     }
-
+    .carousel img{
+        width: 480px;
+        height: 270px;
+    }
+   
 }
 @media screen and (max-width:580px) {
     .lead{
-        line-height: 1.7rem;
-        font-size: 15px;
+        line-height: 1.8rem;
+        font-size: 18px;
     }
-
+    .carousel img{
+        width: 450px;
+        height: 270px;
+    }
 }
 @media screen and (max-width:414px) {
     .lead{
@@ -444,34 +541,10 @@ footer p{
     .topic2{
         margin-top: 100px;
     }
-    
+    .carousel img{
+        width: 300px;
+        height: 200px;
+    }
+   
 
-}
-
-.animate{
-    position: relative;
-    min-height: 100px;
-    width: 100%;
-    height: 100%;
-}
-.twshape{
-    width: 200px;
-    height: 400px;
-    background-color: cadetblue;
-    position: absolute;
-    right: 50px;
-}
-.airplane{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: cornsilk;
-    position: absolute;
-}
-.location1{
-    width: 200px;
-    height: 300px;
-    background-color: darkgrey;
-    position: absolute;
-    top:600px
 }

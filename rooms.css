@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-   background-image: url(pic/theme.jpg);
+   background-image: url(pic/theme1.jpg);
 }
 .container_1{
     width: 90%;
@@ -135,6 +135,10 @@ section{
 em{
     color: red;
     font-size: 60px;
+}
+.add{
+    background-color: red;
+    color: white !important;
 }
 /* rooms */
 .flex_slider{

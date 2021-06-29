@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $('.rm').click(function () {
+        $('.rm').removeClass('add');
+        $(this).addClass('add');
+    })
+
     $("#dbl_rooms").click(function () {
         $(".rooms").hide();
         $(".dbl_rooms").show();
