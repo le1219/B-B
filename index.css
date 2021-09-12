@@ -303,8 +303,8 @@ section{
 
 
 .bg{
-    background-color: rgb(255, 233, 233);
-    min-height: 500px;
+    background-color:rgba(223, 221, 221, 0.726);;
+    min-height: 300px;
     margin-top: 100px;
 }
 

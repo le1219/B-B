@@ -13,6 +13,20 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slide/slick.css" />
     <link rel="stylesheet" type="text/css" href="slide/slick-theme.css" />
+    <style>
+        .travel_family.show {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        .travel_family {
+            position: relative;
+            margin-top: 100px;
+            transform: translateY(200px);
+            opacity: 0;
+            transition: 1s;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +34,7 @@
         <nav>
             <ul class="">
                 <li class=""><a href="english.index.html#rooms">Rooms</a></li>
-                <li class=""><a href="car.html">location</a></li>
+                <li class=""><a href="english.index.html#location">location</a></li>
                 <li class=""><a href="english.index.html#travel">Travel</a></li>
                 <li class=""><a href="index.html">Chinese</a></li>
             </ul>
@@ -284,6 +298,81 @@
                     </div>
                     <div class="card_footer">Drive away from the homestay 5.7km</div>
                 </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/8.jpeg" alt="">
+                        <h4>Beishan Broadcasting Wall</h4>
+                        <h6>Jinning Township</h6>
+                        <p>he structure was built in 1967 as a physiological Cross-Strait warfare instrument directed
+                            towards Mainland China.Material such as songs by Taiwanese singer Teresa Teng and speeches
+                            inviting enemy soldiers to defect were played through the loudspeakers. Retaliatory speakers
+                            also broadcast messages from the other side of the Strait.It was used until late 1970s.
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 10.1km </div>
+                </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/3.jpg" alt="">
+                        <h4>Juguang Tower</h4>
+                        <h6>incheng, Kinmen</h6>
+                        <p>The construction of the tower started in 1952 and was completed in the fall of 1953.
+                            It was built to commemorate the fallen armed forces uding the Battle of Guningtou 4 years
+                            earlier
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 2.9km</div>
+                </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/8.jpeg" alt="">
+                        <h4>Beishan Broadcasting Wall</h4>
+                        <h6>Jinning Township</h6>
+                        <p>he structure was built in 1967 as a physiological Cross-Strait warfare instrument directed
+                            towards Mainland China.Material such as songs by Taiwanese singer Teresa Teng and speeches
+                            inviting enemy soldiers to defect were played through the loudspeakers. Retaliatory speakers
+                            also broadcast messages from the other side of the Strait.It was used until late 1970s.
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 10.1km </div>
+                </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/3.jpg" alt="">
+                        <h4>Juguang Tower</h4>
+                        <h6>incheng, Kinmen</h6>
+                        <p>The construction of the tower started in 1952 and was completed in the fall of 1953.
+                            It was built to commemorate the fallen armed forces uding the Battle of Guningtou 4 years
+                            earlier
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 2.9km</div>
+                </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/8.jpeg" alt="">
+                        <h4>Beishan Broadcasting Wall</h4>
+                        <h6>Jinning Township</h6>
+                        <p>he structure was built in 1967 as a physiological Cross-Strait warfare instrument directed
+                            towards Mainland China.Material such as songs by Taiwanese singer Teresa Teng and speeches
+                            inviting enemy soldiers to defect were played through the loudspeakers. Retaliatory speakers
+                            also broadcast messages from the other side of the Strait.It was used until late 1970s.
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 10.1km </div>
+                </div>
+                <div class="card all travel_family">
+                    <div class="card_main">
+                        <img src="pic/travel/3.jpg" alt="">
+                        <h4>Juguang Tower</h4>
+                        <h6>incheng, Kinmen</h6>
+                        <p>The construction of the tower started in 1952 and was completed in the fall of 1953.
+                            It was built to commemorate the fallen armed forces uding the Battle of Guningtou 4 years
+                            earlier
+                        </p>
+                    </div>
+                    <div class="card_footer">Drive away from the homestay 2.9km</div>
+                </div>
                 <div class="clear"></div>
             </div>
         </div>
@@ -365,7 +454,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="/slide/slick.min.js"></script>
+    <script src="slide/slick.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            // 用 jQuery 的 each 迴圈，把每一個 .intro-wrap 拿出來檢查
+            // 這裡總共會跑五次，index 會從 0 到 4 執行五次
+            // item 則是每一個 .intro-wrap 物件
+            $('.travel_family').each(function (index, item) {
+                // console.log('item:', $(item).offset().top);
+
+                // 當使用者滑動超過我們某一個 .intro-wrap 在網頁的高
+                // 表示已經到了要 show 的時機點，因此我們給他 .addClass('show')
+                if ($(window).scrollTop() + $(window).height() >= $(item).offset().top) {
+                    $(item).addClass('show');
+                }
+                else {
+                    $(item).removeClass('show');
+                }
+            });
+        });
+    </script>
 
 </body>
 

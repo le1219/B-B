@@ -125,6 +125,7 @@ li:hover{
     border: 1px solid red;
     margin-right: 10px;
     cursor: grab;
+    background-color: white;
 }
 
 /* ----section---- */
@@ -156,7 +157,7 @@ em{
 }
 .rooms{
     width: 100%;
-    height:450px;
+    min-height:450px;
     border: 2px solid #D5776C;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -252,17 +253,19 @@ em{
 .booking_info img{
     margin-right: 10px;
 }
-.booking_info p{
+.booking_info h4{
     margin: 0;
     margin-right: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
     color:rgb(145, 3, 3);
     font-size: 20px;
     font-weight: bolder;
     border-bottom: 1px solid red;
     display: inline;
-
-    
+}
+.booking_c{
+    margin-top: 10px;
 }
 .ps{
     display: flex;
@@ -409,6 +412,7 @@ footer p{
         justify-content: center;
         margin:0;
         margin-bottom: 10px;
+        margin-top: 30px;
     }
     .booking_info{
        
@@ -441,6 +445,43 @@ footer p{
    
     
 }
+@media screen and (max-width:895px) {
+    .rooms:nth-child(2n-1) .ps{
+        padding-right: 20px; 
+        padding-left: 0;
+    }
+.rooms ol{
+        width: 90%;
+    }
+    .center{
+        margin: 0 auto;
+    }
+    .rooms_intro{
+        width: 100%;
+        padding: 0;
+
+    }
+    .flex_slider{
+        width: 100%;
+    }
+    .booking_info{
+        flex-wrap: wrap;
+        text-align: center;
+     }
+     .booking_info h2{
+        border-bottom: 1px solid black;
+        border-right: 0;
+        width: 100%;
+        padding-bottom: 20px;
+     }
+     
+
+    .rooms:nth-child(2n-1) .rooms_intro{
+        padding: 0px;
+    }
+    .rooms:nth-child(2n-1) .center{
+        margin: 0 auto;
+    }
 @media screen and (max-width:877px) {
         nav{
             margin-right: 50px;
@@ -458,30 +499,7 @@ footer p{
         padding-left: 0;
     }
 }
-@media screen and (max-width:845px) {
-    .rooms:nth-child(2n-1) .ps{
-        padding-right: 20px; 
-        padding-left: 0;
-    }
-.rooms ol{
-        width: 90%;
-    }
-    .center{
-        margin: 0 auto;
-    }
-    .rooms_intro{
-        width: 100%;
-        padding: 0;
-    }
-    .flex_slider{
-        width: 100%;
-    }
-    .rooms:nth-child(2n-1) .rooms_intro{
-        padding: 0px;
-    }
-    .rooms:nth-child(2n-1) .center{
-        margin: 0 auto;
-    }
+
     @media screen and (max-width:700px){
         nav {
         justify-content: space-between;
@@ -521,11 +539,63 @@ footer p{
     .aa{
         display: block;
     }
+    .roomstype {
+        display: block;
+
+    }
     
     .rm{
        padding: 10px 10px;
        border: 1px solid red;
        text-align: center;
+       width: 100%;
+       margin-top: 10px;
     }
-
+    .bath, .food, .room{
+        display: block;
+        text-align: left;
+    }
+    .rooms_img img{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media screen and (max-width:414px){
+    .booking_c{
+        margin-left: 0px;
+        display: block;
+    }
+    .booking_c img{
+        height: 30%;
+    }
+    .ps img {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+    .rooms:nth-child(2n-1) >.booking_c img{
+        width: 30%;
+    }
+    .rooms:nth-child(2n-1) >.ps img{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+    
+}
+@media screen and (max-width:375px){
+    .rooms:nth-child(2n-1) >.booking_c img{
+        width: 10%;
+    }
+    .rooms:nth-child(2n-1) >.ps img{
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+    }
+    .rooms:nth-child(2n-1) >.ps h6{
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    
+    
 }

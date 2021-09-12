@@ -337,6 +337,7 @@ em{
     margin-right:20px ;
     border-radius: 10px;
     color:red;
+    background-color: white;
 }
 .km_intro{
     position: relative;
@@ -649,4 +650,13 @@ footer p{
       top: 70%;
     }
   }
+}
+@media screen and (max-width:500px) {
+    .travel_nav {
+        display: block;
+    }
+    .travel_nav li{
+        text-align: center;
+        margin-top: 10px;
+    }
 }
