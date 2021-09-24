@@ -156,7 +156,14 @@ li:hover{
     font-size: 20px;
     padding: 16px 32px;
     border-radius: 25px;
+    
 } 
+.intro .mobile_text{
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    margin: 0 auto;
+}
 .hercosection:hover .logo {
     opacity: 0.3;
   }
@@ -507,7 +514,7 @@ iframe{
         margin: 50px auto;
         display: flex;
         flex-wrap: wrap;
-        border:1px solid black;
+
     }
     .part_location{
         justify-content: space-around;
@@ -580,6 +587,7 @@ iframe{
      }
  }
  @media screen and (max-width:650px){
+
     nav ul li{
         margin-right: 30px
      };
@@ -597,8 +605,21 @@ iframe{
         .kinmen > img{
             flex-wrap: wrap;
             padding-left: 30px;
-            width: 500px;
+            min-height:300px
         }
         
         
+ }
+ @media screen and (max-width:500px) {
+     .text{
+        display: none;
+     }
+     .mobile_text{
+         display: block;
+     }
+     .card{
+         margin-left: 0;
+         margin-right: 0;
+         margin-bottom: 0;
+     }
  }
